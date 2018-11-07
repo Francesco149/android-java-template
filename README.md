@@ -21,7 +21,7 @@ the first time you run it will explain how to generate a keystore
 
 # environment variables
 * ANDROID_SDK_ROOT: path to the android sdk (default: opt/android-sdk)
-* ANDROID_PLATFORM: platform version (default: android-28
-* ANDROID_BUILD_TOOLS: build tools version (default: 28.0.3
+* ANDROID_PLATFORM: platform version (default: android-28)
+* ANDROID_BUILD_TOOLS: build tools version (default: 28.0.3)
 * ANDROID_KEYSTORE: path to the keystore used for signing
   (default project_dir/key.keystore)"
