@@ -64,7 +64,7 @@ echo "sdk: $android_sdk"
 echo "build tools: $android_build_tools"
 PATH="$PATH:$android_sdk/tools/bin"
 PATH="$PATH:$android_sdk/platform-tools"
-APTH="$PATH:$android_build_tools"
+PATH="$PATH:$android_build_tools"
 
 build_inside_project() {
   namespace=$(
