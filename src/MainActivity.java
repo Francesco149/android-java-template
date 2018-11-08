@@ -3,7 +3,7 @@ package com.example.helloandroid;
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.RelativeLayout;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.view.Gravity;
 
@@ -11,7 +11,8 @@ public class MainActivity extends Activity {
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    RelativeLayout layout = new RelativeLayout(this);
+    LinearLayout layout = new LinearLayout(this);
+    layout.setOrientation(LinearLayout.VERTICAL);
     TextView helloTextView = new TextView(this);
     helloTextView.setGravity(Gravity.CENTER);
     helloTextView.setTextSize(24);
