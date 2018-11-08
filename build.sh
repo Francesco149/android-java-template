@@ -97,7 +97,7 @@ build_inside_project() {
 EOF
   find src/ -name *.java | xargs \
     javac -d obj -classpath src -bootclasspath "$android_jar" \
-      -Werror -source 6 || return $?
+      -Werror -source 7 || return $?
   dx --dex --output=bin/classes.dex obj || return $?
   cd bin
   aapt package -f -m -F "${exename}.unaligned.apk" \
