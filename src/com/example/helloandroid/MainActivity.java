@@ -12,11 +12,6 @@ public class MainActivity extends Activity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     RelativeLayout layout = new RelativeLayout(this);
-    RelativeLayout.LayoutParams params =
-      new RelativeLayout.LayoutParams(
-        RelativeLayout.LayoutParams.MATCH_PARENT,
-        RelativeLayout.LayoutParams.MATCH_PARENT);
-    layout.setLayoutParams(params);
     TextView helloTextView = new TextView(this);
     helloTextView.setGravity(Gravity.CENTER);
     helloTextView.setTextSize(24);
