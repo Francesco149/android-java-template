@@ -118,7 +118,7 @@ EOF
   adb uninstall $namespace || return $?
   adb install "bin/${exename}.apk" || return $?
   adb shell am start -n $namespace/.MainActivity || return $?
-  adb logcat | grep "^./$namespace\..*$" || return $?
+  adb logcat | grep -e "^./$namespace\..*$" -e E/AndroidRuntime || return $?
 }
 
 olddir="$(pwd)"
